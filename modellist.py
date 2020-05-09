@@ -9,7 +9,7 @@ class Modellist():
         print('3: x')
         print('-'*30)
 
-    def __call__(self,x,seon):
+    def __call__(self,x):
         return {1: Unet.Unet(1),
         2: fcn_resnet.fcn_resnet.FCN()
         #3: Vgg.VGG16(seon)
