@@ -27,9 +27,10 @@ model = modellist(args.modelnum)
 model = model.to(device)
 criterion = utils.DiceBCELoss()
 optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+print('modelnum : ',args.modelnum)
 print('criterion : DiceBCELoss')
 print('learning_rate : ',args.lr)
-print('optimizer : SGD(momentum =0.9 , decay = 5e-4')
+print('optimizer : SGD(momentum =0.9 , decay = 5e-4)')
 print('-'*100)
 
 #show to model archtecture
